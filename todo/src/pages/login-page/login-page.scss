@@ -1,0 +1,123 @@
+.login-page {
+  display: flex;
+  height: fit-content;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMGFuZCUyMHB1cnBsZSUyMGdyYWRpZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #080e27;
+  color: white;
+}
+.container {
+  background-color: rgba(29, 92, 117, 0.541);
+  height: fit-content;
+  width: 80vw;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-image {
+  height: 44.4rem;
+}
+
+a {
+  color: white;
+  font-style: none;
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.tag-line {
+  font-size: 12px;
+}
+
+.login-illustration,
+.login-content {
+  flex: 1;
+}
+
+form > * {
+  margin: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid rgb(108, 208, 248);
+  padding: 10px;
+  color: white;
+}
+
+button {
+  width: 100px;
+  padding: 0.4rem;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.btn-filled {
+  background-color: rgb(23, 170, 228);
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
+  .login-image {
+    height: 72vh;
+    width: 40vw;
+  }
+  .container {
+    height: 72vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .login-image {
+    height: 60vh;
+    width: 35vw;
+  }
+  .container {
+    height: 72vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .login-illustration {
+    display: none;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
